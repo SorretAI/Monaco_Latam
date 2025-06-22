@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual View</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column" id="editor-column">
+            <div class="header">
+                <h3>Code</h3>
+                <button id="run-btn">Run</button>
+            </div>
+            <textarea id="code-editor" spellcheck="false">
+<style>
+    body {
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f2f5;
+    }
+    .card {
+        background: white;
+        padding: 2rem;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+    .card h1 {
+        color: #333;
+        margin-bottom: 0.5rem;
+    }
+    .card p {
+        color: #777;
+        margin-top: 0;
+    }
+</style>
+
+<div class="card">
+    <h1>Hello, World!</h1>
+    <p>This is your visual output.</p>
+</div>
+            </textarea>
+        </div>
+
+        <div class="column" id="visual-column">
+            <div class="header">
+                <h3>Visual</h3>
+            </div>
+            <iframe id="preview-frame"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
